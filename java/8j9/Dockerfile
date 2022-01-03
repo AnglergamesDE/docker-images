@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH ibm-semeru-runtimes:open-8-jdk
+FROM        --platform=$TARGETOS/$TARGETARCH ibm-semeru-runtimes:open-8-jre
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 
