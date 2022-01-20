@@ -5,9 +5,7 @@ on:
     - cron: "0 0 * * 1"
   push:
     branches:
-      - master
-    paths:
-      - java/**
+      - main
 jobs:
   push:
     name: "yolks:java_${{ matrix.tag }}"
