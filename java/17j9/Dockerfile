@@ -28,7 +28,7 @@ LABEL       org.opencontainers.image.source="https://github.com/AnglergamesDE/do
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN 		apt-get update -y \
- 			&& apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
+ 			&& apt-get install -y ca-certificates openssl tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 --no-install-recommends \
  			&& useradd -d /home/container -m container
 
 USER        container
