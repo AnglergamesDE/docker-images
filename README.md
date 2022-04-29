@@ -11,5 +11,5 @@ All of these images are available for `linux/amd64`.
     * `ghcr.io/anglergamesde/yolks:java_8j9`
   * [`java17 - OpenJ9`](https://github.com/AnglergamesDE/docker-images/tree/main/java/17j9)
     * `ghcr.io/anglergamesde/yolks:java_17j9`
-  * [`java18 - OpenJ9`](https://github.com/AnglergamesDE/docker-images/tree/main/java/17j9)
+  * [`java18 - OpenJ9`](https://github.com/AnglergamesDE/docker-images/tree/main/java/18j9)
 	  * `ghcr.io/anglergamesde/yolks:java_18j9`
