@@ -6,10 +6,8 @@ All of these images are available for `linux/amd64`.
 
 
 ## Available Images
-* [`java`](https://github.com/AnglergamesDE/agde_yolks/tree/main/java)
-  * [`java8 - OpenJ9`](https://github.com/AnglergamesDE/docker-images/tree/main/java/8j9)
-    * `ghcr.io/anglergamesde/yolks:java_8j9`
-  * [`java17 - OpenJ9`](https://github.com/AnglergamesDE/docker-images/tree/main/java/17j9)
-    * `ghcr.io/anglergamesde/yolks:java_17j9`
-  * [`java18 - OpenJ9`](https://github.com/AnglergamesDE/docker-images/tree/main/java/18j9)
-	  * `ghcr.io/anglergamesde/yolks:java_18j9`
+* [`java`](https://github.com/StrilonNET/agde_yolks/tree/main/java)
+  * [`java18`](https://github.com/StrilonNET/docker-images/tree/main/java/latest)
+      * `ghcr.io/strilonnet/yolks:latest`
+  * [`java18 - OpenJ9`](https://github.com/StrilonNET/docker-images/tree/main/java/latestj9)
+    * `ghcr.io/strilonnet/yolks:latestj9`

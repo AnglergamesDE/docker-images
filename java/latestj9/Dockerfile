@@ -24,7 +24,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH ibm-semeru-runtimes:open-18-jre
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 
-LABEL       org.opencontainers.image.source="https://github.com/AnglergamesDE/docker-images"
+LABEL       org.opencontainers.image.source="https://github.com/StrilonNET/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN 		apt-get update -y \
