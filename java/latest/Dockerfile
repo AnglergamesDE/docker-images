@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:18-jre-alpine
+FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:18-jre-focal
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 
