@@ -20,16 +20,15 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:18-jre-focal
+FROM        --platform=$TARGETOS/$TARGETARCH azul/zulu-openjdk-alpine:18-jre-headless
 
-LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
+LABEL       author="jerriidesu" maintainer="jerriidesu@strilon.net"
 
 LABEL       org.opencontainers.image.source="https://github.com/StrilonNET/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN 		apt-get update -y \
- 			&& apt-get install -y ca-certificates openssl tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 --no-install-recommends \
- 			&& useradd -d /home/container -m container
+RUN 		RUN apk add --no-cache --update ca-certificates openssl tar bash sqlite fontconfig tzdata iproute2 libstdc++6  \
+ 			&& adduser --disabled-password --home /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container
