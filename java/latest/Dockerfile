@@ -27,7 +27,7 @@ LABEL       author="jerriidesu" maintainer="jerriidesu@strilon.net"
 LABEL       org.opencontainers.image.source="https://github.com/StrilonNET/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN 		RUN apk add --no-cache --update ca-certificates openssl tar bash sqlite fontconfig tzdata iproute2 libstdc++6  \
+RUN 		apk add --no-cache --update ca-certificates openssl tar bash sqlite fontconfig tzdata iproute2 libstdc++6  \
  			&& adduser --disabled-password --home /home/container container
 
 USER        container
