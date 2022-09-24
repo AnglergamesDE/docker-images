@@ -7,7 +7,7 @@ All of these images are available for `linux/amd64`.
 
 ## Available Images
 * [`java`](https://github.com/StrilonNET/agde_yolks/tree/main/java)
-  * [`java18`](https://github.com/StrilonNET/docker-images/tree/main/java/latest)
+  * [`java19`](https://github.com/StrilonNET/docker-images/tree/main/java/latest)
       * `ghcr.io/strilonnet/yolks:latest`
   * [`java18 - OpenJ9`](https://github.com/StrilonNET/docker-images/tree/main/java/latestj9)
     * `ghcr.io/strilonnet/yolks:latestj9`

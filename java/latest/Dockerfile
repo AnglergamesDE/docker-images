@@ -20,9 +20,9 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH azul/zulu-openjdk-alpine:18-jre-headless
+FROM        --platform=$TARGETOS/$TARGETARCH azul/zulu-openjdk-alpine:19-jre-headless
 
-LABEL       author="jerriidesu" maintainer="jerriidesu@strilon.net"
+LABEL       author="Yamayaki" maintainer="yamayaki@strilon.net"
 
 LABEL       org.opencontainers.image.source="https://github.com/StrilonNET/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT
