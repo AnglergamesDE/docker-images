@@ -20,18 +20,15 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH alpine:latest
+FROM        --platform=linux/amd64 ghcr.io/graalvm/jdk:latest
 
 LABEL       author="Yamayaki" maintainer="yamayaki@strilon.net"
 
 LABEL       org.opencontainers.image.source="https://github.com/StrilonNET/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN 		apk add --no-cache --update ca-certificates openssl tar bash sqlite fontconfig tzdata iproute2 libstdc++6  \
- 			&& adduser --disabled-password --home /home/container container \
-      		&& mkdir /usr/lib/graal \
-      		&& wget -q -O - https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java17-linux-amd64-22.2.0.tar.gz | tar xvzf - --directory /usr/lib/graal/ \
-      		&& export PATH=/usr/lib/graal/graalvm-ce-java17-22.2.0/bin:$PATH
+RUN 		microdnf install ca-certificates openssl tar bash sqlite fontconfig tzdata iproute libstdc++  \
+ 			&& adduser --home /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container
