@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH azul/zulu-openjdk-alpine:19-jre-headless
+FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:19-jre-alpine
 
 LABEL       author="Yamayaki" maintainer="yamayaki@strilon.net"
 
