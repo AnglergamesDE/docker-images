@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH ibm-semeru-runtimes:open-18-jre
+FROM        --platform=$TARGETOS/$TARGETARCH ibm-semeru-runtimes:open-17-jre
 
 LABEL       author="Yamayaki" maintainer="yamayaki@strilon.net"
 
