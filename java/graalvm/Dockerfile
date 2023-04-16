@@ -27,7 +27,7 @@ LABEL       author="Yamayaki" maintainer="yamayaki@strilon.net"
 LABEL       org.opencontainers.image.source="https://github.com/StrilonNET/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN 		microdnf install ca-certificates openssl tar bash sqlite fontconfig tzdata iproute libstdc++  \
+RUN 		microdnf install ca-certificates openssl tar bash sqlite fontconfig tzdata iproute libstdc++ -y \
  			&& adduser --home /home/container container
 
 USER        container
