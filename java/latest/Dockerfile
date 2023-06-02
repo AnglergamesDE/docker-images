@@ -22,7 +22,7 @@
 
 FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:20-jre-alpine
 
-LABEL       author="Yamayaki" maintainer="yamayaki@strilon.net"
+LABEL       author="Yamayaki" maintainer="hallo@yamayaki.de"
 
 LABEL       org.opencontainers.image.source="https://github.com/StrilonNET/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT

@@ -12,8 +12,8 @@ jobs:
       matrix:
         tag:
           - latest
-          - latestj9
-          - graalvm
+          - lts
+          - tiny
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1

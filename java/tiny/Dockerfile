@@ -20,15 +20,15 @@
 # SOFTWARE.
 #
 
-FROM        --platform=linux/amd64 ghcr.io/graalvm/jdk:latest
+FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:20-jre-alpine
 
-LABEL       author="Yamayaki" maintainer="yamayaki@strilon.net"
+LABEL       author="Yamayaki" maintainer="hallo@yamayaki.de"
 
 LABEL       org.opencontainers.image.source="https://github.com/StrilonNET/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN 		microdnf install ca-certificates openssl tar bash sqlite fontconfig tzdata iproute libstdc++ -y \
- 			&& adduser --home /home/container container
+RUN 		apk add --no-cache --update ca-certificates openssl bash tzdata iproute2 \
+ 			&& adduser --disabled-password --home /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container

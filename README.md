@@ -6,12 +6,12 @@ All of these images are available for `linux/amd64`.
 
 
 ## Available Images
-* [`java`](https://github.com/StrilonNET/agde_yolks/tree/main/java)
-  * [`java20`](https://github.com/StrilonNET/docker-images/tree/main/java/latest)
+* [`Java`](https://github.com/StrilonNET/agde_yolks/tree/main/java)
+  * [`Java 20`](https://github.com/StrilonNET/docker-images/tree/main/java/latest)
       * `ghcr.io/strilonnet/yolks:latest`
-  * [`java17 - OpenJ9`](https://github.com/StrilonNET/docker-images/tree/main/java/latestj9)
-    * `ghcr.io/strilonnet/yolks:latestj9`
+  * [`Java 17`](https://github.com/StrilonNET/docker-images/tree/main/java/lts)
+    * `ghcr.io/strilonnet/yolks:lts`
 
 ####
-* [`Java 17 - GraalVM-CE`](https://github.com/StrilonNET/docker-images/tree/main/java/graalvm)
-	* `ghcr.io/strilonnet/yolks:graalvm`
+* [`Java 20 (no libstdc++)`](https://github.com/StrilonNET/docker-images/tree/main/java/tiny)
+	* `ghcr.io/strilonnet/yolks:tiny`

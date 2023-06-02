@@ -20,16 +20,15 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH ibm-semeru-runtimes:open-17-jre
+FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:17-jre-alpine
 
-LABEL       author="Yamayaki" maintainer="yamayaki@strilon.net"
+LABEL       author="Yamayaki" maintainer="hallo@yamayaki.de"
 
 LABEL       org.opencontainers.image.source="https://github.com/StrilonNET/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN 		apt-get update -y \
- 			&& apt-get install -y ca-certificates openssl tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 --no-install-recommends \
- 			&& useradd -d /home/container -m container
+RUN 		apk add --no-cache --update ca-certificates openssl tar bash sqlite fontconfig tzdata iproute2 libstdc++ libstdc++6  \
+ 			&& adduser --disabled-password --home /home/container container
 
 USER        container
 ENV         USER=container HOME=/home/container
